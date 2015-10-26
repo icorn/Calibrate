@@ -1,0 +1,26 @@
+/* 
+  Localizable.strings
+  calibrate
+
+  Created by Oliver Eichhorn on 26.10.15.
+  Copyright © 2015 Oliver Eichhorn. All rights reserved.
+*/
+
+
+// table view menu
+
+"Calibration"		= "Calibration";
+"Introduction"		= "Introduction";
+"Brightness"		= "Brightness";
+"Contrast"			= "Contrast";
+"Verification"		= "Verification";
+"Colorsteps"		= "Colorsteps";
+"Saturation"		= "Saturation";
+"Sharpness"			= "Sharpness";
+
+// detail view
+
+"ShowTestPattern"	= "Show Test Pattern";
+
+// introduction
+

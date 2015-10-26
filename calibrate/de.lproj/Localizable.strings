@@ -1,0 +1,30 @@
+/* 
+  Localizable.strings
+  calibrate
+
+  Created by Oliver Eichhorn on 26.10.15.
+  Copyright © 2015 Oliver Eichhorn. All rights reserved.
+*/
+
+
+// table view menu
+
+"Calibration"		= "Kalibrierung";
+"Introduction"		= "Einführung";
+"Brightness"		= "Helligkeit";
+"Contrast"			= "Kontrast";
+"Verification"		= "Kontrolle";
+"Colorsteps"		= "Farbstufen";
+"Saturation"		= "Farbsättigung";
+"Sharpness"			= "Bildschärfe";
+
+// detail view
+
+"ShowTestPattern"	= "Zeige Testbild";
+
+// introduction
+
+"introHeader1"		= "Bevor du mit der Kalibrierung loslegst, solltest du einige Punkte beachten, um ein optimales Ergebnis zu erreichen:";
+"introBullet1"		= "Stelle den Bildmodus deines Displays auf 'Filmmodus' oder 'Kinomodus'. Je nach Hersteller kann es auch 'Movie Mode' oder 'Cinema mode' heißen. So vermeidet man unnatürlich knallige Farben und eine übersteigerte Helligkeit.";
+"introBullet2"		= "Die Kalibrierung sollte unter den gleichen Licht- und Raumverhältnissen stattfinden, in denen du auch tatsächlich TV oder Filme konsumierst.";
+"introBullet3"		= "Die einzelnen Kalibrierungs-Schritte sollte tatsächlich in der vorgegebenen Reihenfolge durchgeführt werden, weil sie teilweise aufeinander aufbauen bzw. voneinander abhängig sind.";
