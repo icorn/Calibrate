@@ -13,10 +13,9 @@
 "Introduction"		= "Introduction";
 "Brightness"		= "Brightness";
 "Contrast"			= "Contrast";
-"Verification"		= "Verification";
-"Colorsteps"		= "Colorsteps";
-"Saturation"		= "Saturation";
+"Overscan"			= "Overscan";
 "Sharpness"			= "Sharpness";
+"Combination"		= "Summary";
 
 // detail view
 

@@ -20,7 +20,6 @@ class MenuTableViewController: UITableViewController {
 	@IBOutlet weak var tableCellLabel3: UILabel!
 	@IBOutlet weak var tableCellLabel4: UILabel!
 	@IBOutlet weak var tableCellLabel5: UILabel!
-	@IBOutlet weak var tableCellLabel6: UILabel!
 	
 	
     override func viewDidLoad() {
@@ -49,15 +48,13 @@ class MenuTableViewController: UITableViewController {
 		
 		// set localized labels
 		
-		
 		tableCellLabelIntro.text = NSLocalizedString("Introduction", comment: "")
 		
 		tableCellLabel1.text = "1. " + NSLocalizedString("Brightness", comment: "")
 		tableCellLabel2.text = "2. " + NSLocalizedString("Contrast", comment: "")
-		tableCellLabel3.text = "3. " + NSLocalizedString("Verification", comment: "")
-		tableCellLabel4.text = "4. " + NSLocalizedString("Colorsteps", comment: "")
-		tableCellLabel5.text = "5. " + NSLocalizedString("Saturation", comment: "")
-		tableCellLabel6.text = "6. " + NSLocalizedString("Sharpness", comment: "")
+		tableCellLabel3.text = "3. " + NSLocalizedString("Overscan", comment: "")
+		tableCellLabel4.text = "4. " + NSLocalizedString("Sharpness", comment: "")
+		tableCellLabel5.text = "5. " + NSLocalizedString("Combination", comment: "")
     }
 
     override func didReceiveMemoryWarning() {
