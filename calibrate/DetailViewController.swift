@@ -72,7 +72,8 @@ class DetailViewController: UIViewController {
 				setBottomMostElement(bulletLabel2)
 			
 			case itemBrightness:
-				setHiddenElements([bullet1, bullet2, bullet3, bulletLabel1, bulletLabel2, bulletLabel3, actionButton], hidden: false)
+				setHiddenElements([bullet1, bullet2, bulletLabel1, bulletLabel2, actionButton], hidden: false)
+				setHiddenElements([bullet3, bulletLabel3], hidden: true)
 
 				headlineLabel.text = " " + NSLocalizedString("Brightness", comment: "") + " "
 				headerLabel1.text = NSLocalizedString("brightnessHeader1", comment: "")
@@ -83,7 +84,7 @@ class DetailViewController: UIViewController {
 				bulletLabel2.text = NSLocalizedString("brightnessBullet2", comment: "")
 				bulletLabel3.text = NSLocalizedString("brightnessBullet3", comment: "")
 
-				setBottomMostElement(bulletLabel3)
+				setBottomMostElement(bulletLabel2)
 
 			case itemContrast:
 				setHiddenElements([bullet1, bullet2, bullet3, bulletLabel1, bulletLabel2, bulletLabel3, actionButton], hidden: false)

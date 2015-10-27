@@ -24,37 +24,37 @@
 // introduction
 
 "introHeader1"		= "Bevor du mit der Kalibrierung loslegst, solltest du einige Punkte beachten, um ein optimales Ergebnis zu erreichen:";
-"introBullet1"		= "Stelle den Bildmodus deines Displays auf 'Filmmodus' oder 'Kinomodus'. Je nach Hersteller kann es auch 'Movie Mode' oder 'Cinema mode' heissen. In der Werkseinstellung ist oft ein Modus eingestellt, der unnatürlich knallige Farben oder eine übersteigerte Helligkeit darstellt.";
+"introBullet1"		= "Stelle den Bildmodus deines Displays auf 'Filmmodus' oder 'Kinomodus'. Je nach Hersteller kann es auch 'Movie Mode' oder 'Cinema Mode' heißen. In der Werkseinstellung ist oft ein Modus ausgewählt, der unnatürlich knallige Farben oder eine übersteigerte Helligkeit darstellt.";
 "introBullet2"		= "Die Kalibrierung sollte unter den gleichen Licht- und Raumverhältnissen stattfinden, in denen du auch tatsächlich TV oder Filme konsumierst.";
 "introBullet3"		= "Die einzelnen Kalibrierungs-Schritte sollte tatsächlich in der vorgegebenen Reihenfolge durchgeführt werden, weil sie teilweise aufeinander aufbauen bzw. voneinander abhängig sind.";
 
 // brightness
 
 "brightnessHeader1"	= "Die Helligkeit ist zusammen mit dem Kontrast die wohl wichtigste Einstellung. Der Helligkeitsregler steuert (auch wenn es paradox klingt) hauptsächlich den Schwarzwert des Geräts. Deshalb betrachten wir hier die dunkelsten Grautöne. Vorgehensweise:";
-"brightnessBullet1"	= "Verändere die Helligkeit so, dass sich die dunklen Felder bei 0%, 4%, 8% und 12% sichtbar voneinander unterscheiden. 0% soll dabei ein tiefes Schwarz darstellen.";
-"brightnessBullet2"	= "Das Feld 'negative' spielt eine Sonderrolle: Videosignale (also Filme und TV-Serien) haben einen limitierten Farbraum. Technisch könnte ein Signal vorliegen, das noch dunkler ist als das für Videosignale zugelassene Schwarz. Idealerweise möchte man das vermeiden, so dass die Felder bei 'negative' und 0% gleich dunkel sein sollten.";
-"brightnessBullet3"	= "Auf Computermonitoren ist das Gleichsetzen von 'negative' und 0% evtl. nicht möglich.";
+"brightnessBullet1"	= "Stelle den Helligkeitswert zunächst auf das Minimum.";
+"brightnessBullet2"	= "Nun erhöhe den Wert schrittweise bis die fünf Felder des Testbilds alle sichtbar sind und sich klar voneinander unterscheiden.";
+"brightnessBullet3"	= "0% soll nun ein tiefes Schwarz darstellen.";
 
 // contrast
 
 "contrastHeader1"	= "Der Kontrastregler steuert hauptsächlich das Weiß des Geräts. Deshalb betrachten wir hier die hellsten Grautöne. Vorgehensweise:";
-"contrastBullet1"	= "Stelle den Kontrastwert nun zuerst auf das Maximum.";
-"contrastBullet2"	= "Nun ändere den Wert nach unten bis sich alle fünf Felder sichtbar voneinander unterscheiden.";
+"contrastBullet1"	= "Stelle den Kontrastwert zunächst auf das Maximum.";
+"contrastBullet2"	= "Nun verringere den Wert schrittweise bis die fünf Felder des Testbilds alle sichtbar sind und sich klar voneinander unterscheiden.";
 "contrastBullet3"	= "Wichtig: Bei zu hohem Kontrastwert kann es zu Farbverfälschungen kommen. Ist das der Fall, sollte man den Kontrast etwas niedriger wählen, auch falls dann die Unterschiede zwischen den Farbflächen geringer werden. Sichtbare Farbverfälschungen in Grauwerten sind auf jeden Fall zu vermeiden.";
 
 // overscan
 
-"overscanHeader1"	= "Aus historischen Gründen beherrschen viele Displays noch den sog. Overscan. Dadurch wird das Bild aussen beschnitten (damit ungewünschte Bildinformationen nicht zu sehen sind) und hinterher wieder hochskaliert. Das ist zu vermeiden, da das Skalieren der Bildqualität schadet.";
-"overscanBullet1"	= "Schalte Overscan in den Einstellungen deines Displays aus. Gibt es eine solche Einstellung nicht, sollte man die Option 'Just Scan', 'Pixel to Pixel' oder 'Nativ' einschalten. Das hat die gleiche Auswirkung, heisst aber von Hersteller zu Hersteller unterschiedlich.";
+"overscanHeader1"	= "Aus historischen Gründen haben viele Displays noch den sog. Overscan eingeschaltet. Dadurch wird das Bild außen beschnitten und hinterher wieder hochskaliert. Das ist zu vermeiden, da das Skalieren der Bildqualität schadet.";
+"overscanBullet1"	= "Schalte Overscan in den Einstellungen deines Displays aus. Gibt es eine solche Einstellung nicht, sollte man die Option 'Just Scan', 'Pixel to Pixel' oder 'Nativ' einschalten. Das hat die gleiche Auswirkung, heißt aber von Hersteller zu Hersteller unterschiedlich.";
 "overscanBullet2"	= "Im Testbild sollten die acht Kreise vollständig zu sehen sein. In den sechs inneren Feldern sollten links dünne vertikale Linien, in der Mitte feine Schachbrettmuster und rechts dünne horizontale Linien erkennbar sein.";
 "overscanBullet3"	= "Ist das nicht der Fall (z. B. wenn die inneren Felder wie grauer Matsch erscheinen), ist der Overscan noch eingeschaltet. Bitte suche die entsprechende Einstellung an deinem Display.";
 
 // sharpness
 
 "sharpnessHeader1"	= "Viele Geräte fügen dem Bild durch zu aggressive Bildschärfe-Einstellungen Informationen (also Pixel) hinzu, die nicht im Ursprungs-Bild enthalten sind. Dadurch entstehen Doppelkonturen. Das wollen wir dem Gerät durch unser Testbild austreiben:";
-"sharpnessBullet1"	= "Schalte die Schärfeeinstellung auf das Minimum.";
-"sharpnessBullet2"	= "Erhöhe nun die Einstellung solange, bis die ersten Artefakte bzw. Doppelkonturen zu sehen sind.";
-"sharpnessBullet3"	= "Setze die Einstellung wieder eine Stufe zurück, so dass gerade keine Artefakte bzw. Doppelkonturen mehr zu sehen sind. Nicht wundern, wenn die Einstellung nun auf 0 oder sehr niedrig steht. Das ist normal - schließlich wollten wir keine künstlich hinzugefügten Pixel im Bild sehen.";
+"sharpnessBullet1"	= "Schalte die Schärfeeinstellung auf das Maximum. Du solltest viele Doppelkonturen an den Linien des Testbilds sehen.";
+"sharpnessBullet2"	= "Verringere nun die Einstellung solange, bis alle Artefakte bzw. Doppelkonturen rund um die Linien verschwunden sind.";
+"sharpnessBullet3"	= "Wundere dich nicht, wenn die Einstellung nun auf 0 oder sehr niedrig steht. Das ist normal - schließlich wollten wir keine künstlich hinzugefügten Pixel im Bild sehen.";
 
 // combination
 

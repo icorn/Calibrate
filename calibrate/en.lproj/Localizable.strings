@@ -23,3 +23,39 @@
 
 // introduction
 
+"introHeader1"		= "Before you start calibrating, you should consider the following points to achieve the best result:";
+"introBullet1"		= "Go to the settings of your display and set the picture mode to 'movie mode' or 'cinema mode' (the name depends on the manufacturer). The factory settings are usually too bright and oversaturated.";
+"introBullet2"		= "The conditions of your room (lighting, viewing distance) while calibrating should be identical to the conditions while watching TV and movies.";
+"introBullet3"		= "The steps of the calibration should be performed in the given order, because some steps (e. g. brightness and contrast) depend on each other.";
+
+// brightness
+
+"brightnessHeader1"	= "The brightness is one of the most important settings. It sounds paradox, but the brightness setting controls the black level of your display. Instructions:";
+"brightnessBullet1"	= "First set the brightness to the minimum.";
+"brightnessBullet2"	= "Now increase the value step by step until all five rectangles on the test pattern are clearly distinguishable from each other.";
+"brightnessBullet3"	= "The 0% rectangle should show a dark black.";
+
+// contrast
+
+"contrastHeader1"	= "The contrast setting mainly controls the white level of your display. Instructions:";
+"contrastBullet1"	= "First set the contrast to the maximum.";
+"contrastBullet2"	= "Now lower the setting step by step until all five rectangles on the test pattern are clearly distinguishable from each other.";
+"contrastBullet3"	= "Important: If the contrast is too high, you might see color distortions. This should be avoided. Lower the contrast until the distortions are gone, even if the rectangles are not as clearly distinguishable from each other as before.";
+
+// overscan
+
+"overscanHeader1"	= "Many displays still have overscan turned on for historical reasons. With overscan, the image is first cropped and then upscaled, which lowers the image quality. Instructions:";
+"overscanBullet1"	= "Turn overscan off in the settings of your display. If you don't find that setting, look for 'Just Scan', 'Pixel to Pixel', or 'Native' and turn it on.";
+"overscanBullet2"	= "In the test pattern, you should be able to see all eight circles completely. Also, in the six inner rectangles you should be able to see thin vertical lines (on the left-hand side), a checkerboard pattern, and thin horizontal lines (right-hand side).";
+"overscanBullet3"	= "If that is not the case (e. g. the inner rectangles are gray and muddy), the overscan is still turned on.";
+
+// sharpness
+
+"sharpnessHeader1"	= "Many displays add artificial informations (halos or double outlines) to the image if the sharpness is too high. That should be avoided. Instructions:";
+"sharpnessBullet1"	= "Set the sharpness to the maximum. You should see lots of double outlines around the lines in the test pattern.";
+"sharpnessBullet2"	= "Decrease the sharpness slowly until you see no more halos or double outlines around the lines.";
+"sharpnessBullet3"	= "Don't be surprised if your sharpness setting is now zero or very low.";
+
+// combination
+
+"combinationHeader1"	= "In the final pattern you can see all previous tests combined. Please check the brightness and contrast settings again, because they work together.";
