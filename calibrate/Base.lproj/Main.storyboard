@@ -169,7 +169,7 @@
                         <sections>
                             <tableViewSection id="MGJ-QZ-QXd">
                                 <cells>
-                                    <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" textLabel="kIB-Hv-IkF" style="IBUITableViewCellStyleDefault" id="DUd-I5-6Wo">
+                                    <tableViewCell contentMode="scaleToFill" misplaced="YES" selectionStyle="default" indentationWidth="10" textLabel="kIB-Hv-IkF" style="IBUITableViewCellStyleDefault" id="DUd-I5-6Wo">
                                         <rect key="frame" x="0.0" y="180" width="634" height="66"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="DUd-I5-6Wo" id="e4D-83-3mg">
@@ -193,7 +193,7 @@
                             </tableViewSection>
                             <tableViewSection headerTitle="Kalibrierung" id="sBV-H1-LLp">
                                 <cells>
-                                    <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" textLabel="GLS-3m-MtH" style="IBUITableViewCellStyleDefault" id="bOi-KZ-OpS">
+                                    <tableViewCell contentMode="scaleToFill" misplaced="YES" selectionStyle="default" indentationWidth="10" textLabel="GLS-3m-MtH" style="IBUITableViewCellStyleDefault" id="bOi-KZ-OpS">
                                         <rect key="frame" x="0.0" y="347" width="634" height="66"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="bOi-KZ-OpS" id="BO9-FG-z1g">
@@ -213,7 +213,7 @@
                                         </tableViewCellContentView>
                                         <animations/>
                                     </tableViewCell>
-                                    <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" textLabel="k7Q-1f-7Mn" style="IBUITableViewCellStyleDefault" id="tlc-hm-ayv">
+                                    <tableViewCell contentMode="scaleToFill" misplaced="YES" selectionStyle="default" indentationWidth="10" textLabel="k7Q-1f-7Mn" style="IBUITableViewCellStyleDefault" id="tlc-hm-ayv">
                                         <rect key="frame" x="0.0" y="427" width="634" height="66"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="tlc-hm-ayv" id="u59-Sj-J0h">
@@ -233,7 +233,7 @@
                                         </tableViewCellContentView>
                                         <animations/>
                                     </tableViewCell>
-                                    <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" textLabel="Amx-N5-F2W" style="IBUITableViewCellStyleDefault" id="0kC-KP-vhP">
+                                    <tableViewCell contentMode="scaleToFill" misplaced="YES" selectionStyle="default" indentationWidth="10" textLabel="Amx-N5-F2W" style="IBUITableViewCellStyleDefault" id="0kC-KP-vhP">
                                         <rect key="frame" x="0.0" y="507" width="634" height="66"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="0kC-KP-vhP" id="3sV-c4-2cQ">
@@ -253,7 +253,7 @@
                                         </tableViewCellContentView>
                                         <animations/>
                                     </tableViewCell>
-                                    <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" textLabel="skL-N4-Tzt" style="IBUITableViewCellStyleDefault" id="zwW-Mw-sQA">
+                                    <tableViewCell contentMode="scaleToFill" misplaced="YES" selectionStyle="default" indentationWidth="10" textLabel="skL-N4-Tzt" style="IBUITableViewCellStyleDefault" id="zwW-Mw-sQA">
                                         <rect key="frame" x="0.0" y="587" width="634" height="66"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="zwW-Mw-sQA" id="sgI-cA-aa8">
@@ -273,7 +273,7 @@
                                         </tableViewCellContentView>
                                         <animations/>
                                     </tableViewCell>
-                                    <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" textLabel="itA-Fj-xie" style="IBUITableViewCellStyleDefault" id="f28-rB-3tq">
+                                    <tableViewCell contentMode="scaleToFill" misplaced="YES" selectionStyle="default" indentationWidth="10" textLabel="itA-Fj-xie" style="IBUITableViewCellStyleDefault" id="f28-rB-3tq">
                                         <rect key="frame" x="0.0" y="667" width="634" height="66"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="f28-rB-3tq" id="QIi-0X-cOe">
@@ -341,7 +341,7 @@
         <scene sceneID="4hR-aQ-r4z">
             <objects>
                 <navigationController id="cHG-dw-E3e" sceneMemberID="viewController">
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="Toj-cU-WCy">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" misplaced="YES" id="Toj-cU-WCy">
                         <rect key="frame" x="0.0" y="0.0" width="1920" height="145"/>
                         <autoresizingMask key="autoresizingMask"/>
                         <animations/>
