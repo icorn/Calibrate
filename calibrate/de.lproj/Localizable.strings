@@ -44,8 +44,8 @@
 
 // overscan
 
-"overscanHeader1"	= "Aus historischen Gründen haben viele Displays noch den sog. Overscan eingeschaltet. Dadurch wird das Bild außen beschnitten und hinterher wieder hochskaliert. Das ist zu vermeiden, da das Skalieren der Bildqualität schadet.";
-"overscanBullet1"	= "Schalte Overscan in den Einstellungen deines Displays aus. Gibt es eine solche Einstellung nicht, sollte man die Option 'Just Scan', 'Pixel to Pixel' oder 'Nativ' einschalten. Das hat die gleiche Auswirkung, heißt aber von Hersteller zu Hersteller unterschiedlich.";
+"overscanHeader1"	= "Aus historischen Gründen haben viele Displays noch den sog. Overscan eingeschaltet, der das Bild außen beschneidet und hinterher wieder hochskaliert. Das ist zu vermeiden, da das Skalieren der Bildqualität schadet.";
+"overscanBullet1"	= "Schalte Overscan in den Einstellungen deines Displays *aus*. Gibt es die Einstellung 'Overscan' nicht, suche nach der Option 'Bildschirmanpassung / Screen Fit' (Samsung), 'Just Scan' (LG), 'Vollpixel' (Sony), 'Punkt-für-Punkt' (Pioneer), 'Pixel to Pixel' oder 'Nativ' und schalte sie *ein*. Das hat die gleiche Auswirkung, heißt aber von Hersteller zu Hersteller unterschiedlich. Leider hat nicht jedes Gerät eine solche Option.";
 "overscanBullet2"	= "Im Testbild sollten die acht Kreise vollständig zu sehen sein. In den sechs inneren Feldern sollten links dünne vertikale Linien, in der Mitte feine Schachbrettmuster und rechts dünne horizontale Linien erkennbar sein.";
 "overscanBullet3"	= "Ist das nicht der Fall (z. B. wenn die inneren Felder wie grauer Matsch erscheinen), ist der Overscan noch eingeschaltet. Bitte suche die entsprechende Einstellung an deinem Display.";
 

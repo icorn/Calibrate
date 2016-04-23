@@ -45,7 +45,7 @@
 // overscan
 
 "overscanHeader1"	= "Many displays still have overscan turned on for historical reasons. With overscan, the image is first cropped and then upscaled, which lowers the image quality. Instructions:";
-"overscanBullet1"	= "Turn overscan off in the settings of your display. If you don't find that setting, look for 'Just Scan', 'Pixel to Pixel', or 'Native' and turn it on.";
+"overscanBullet1"	= "Turn overscan *off* in the settings of your display. This is possible on most displays. If you don't find a setting named 'Overscan', look for 'Just Scan' (LG), 'Screen Fit' (Samsung), 'Full Pixel' (Sony), 'Dot by Dot' (Pioneer), 'Wide' (Visio), 'Pixel to Pixel', '1:1 pixel mapping', or 'Native' and turn it *on*. Every TV manufacturer seems to have a different name for that.";
 "overscanBullet2"	= "In the test pattern, you should be able to see all eight circles completely. Also, in the six inner rectangles you should be able to see thin vertical lines (on the left-hand side), a checkerboard pattern, and thin horizontal lines (right-hand side).";
 "overscanBullet3"	= "If that is not the case (e. g. the inner rectangles are gray and muddy), the overscan is still turned on.";
 
