@@ -27,11 +27,10 @@ class DetailViewController: UIViewController {
 	
 	var currentItem = 0
 	
-	let bullet = "\u{25CF}"
+    let bullet = "\u{2022}"
 	let backViewBottomConstraintName = "BackViewBottom"
 	
 	@IBOutlet weak var headlineLabel: UILabel!
-	@IBOutlet weak var actionButton: UIButton!
 	
 	@IBOutlet weak var headerLabel1: UILabel!
 	
@@ -41,26 +40,35 @@ class DetailViewController: UIViewController {
 	@IBOutlet weak var bulletLabel1: UILabel!
 	@IBOutlet weak var bulletLabel2: UILabel!
 	@IBOutlet weak var bulletLabel3: UILabel!
-	
 	@IBOutlet weak var backView: UIView!
-	
+    @IBOutlet weak var pressRemoteLabel: UILabel!
+    
+    @IBOutlet weak var headlineTopConstraint: NSLayoutConstraint!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-		actionButton.setTitle(NSLocalizedString("ShowTestPattern", comment: ""), forState: UIControlState.Normal)
-		setItem(NSIndexPath(forRow: 0, inSection: 0))
+        pressRemoteLabel.text = "   " + NSLocalizedString("PressRemoteButton", comment: "") + "   "
+        
+        // if tvOS 10, move the headline 30 pixels up
+        if let version = Double(UIDevice.current.systemVersion), version < 11.0
+        {
+            headlineTopConstraint.constant += 30
+        }
+        
+        setItem(IndexPath(row: 0, section: 0))
     }
 
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
     }
     
-	func setItem(newIndexPath: NSIndexPath) {
+	func setItem(_ newIndexPath: IndexPath) {
 		currentItem = newIndexPath.section + newIndexPath.row
 
 		switch currentItem {
 			case itemIntroduction:
 				setHiddenElements([bullet1, bullet2, bulletLabel1, bulletLabel2], hidden: false)
-				setHiddenElements([bullet3, bulletLabel3, actionButton], hidden: true)
+				setHiddenElements([bullet3, bulletLabel3, pressRemoteLabel], hidden: true)
 				
 				headlineLabel.text = " " + NSLocalizedString("Introduction", comment: "") + " "
 				headerLabel1.text = NSLocalizedString("introHeader1", comment: "")
@@ -68,11 +76,11 @@ class DetailViewController: UIViewController {
 				bullet2.text = bullet
 				bulletLabel1.text = NSLocalizedString("introBullet1", comment: "")
 				bulletLabel2.text = NSLocalizedString("introBullet2", comment: "")
-			
+                
 				setBottomMostElement(bulletLabel2)
 			
 			case itemBrightness:
-				setHiddenElements([bullet1, bullet2, bulletLabel1, bulletLabel2, actionButton], hidden: false)
+				setHiddenElements([bullet1, bullet2, bulletLabel1, bulletLabel2, pressRemoteLabel], hidden: false)
 				setHiddenElements([bullet3, bulletLabel3], hidden: true)
 
 				headlineLabel.text = " " + NSLocalizedString("Brightness", comment: "") + " "
@@ -87,7 +95,7 @@ class DetailViewController: UIViewController {
 				setBottomMostElement(bulletLabel2)
 
 			case itemContrast:
-				setHiddenElements([bullet1, bullet2, bullet3, bulletLabel1, bulletLabel2, bulletLabel3, actionButton], hidden: false)
+				setHiddenElements([bullet1, bullet2, bullet3, bulletLabel1, bulletLabel2, bulletLabel3, pressRemoteLabel], hidden: false)
 				
 				headlineLabel.text = " " + NSLocalizedString("Contrast", comment: "") + " "
 				headerLabel1.text = NSLocalizedString("contrastHeader1", comment: "")
@@ -101,7 +109,7 @@ class DetailViewController: UIViewController {
 				setBottomMostElement(bulletLabel3)
 			
 			case itemOverscan:
-				setHiddenElements([bullet1, bullet2, bullet3, bulletLabel1, bulletLabel2, bulletLabel3, actionButton], hidden: false)
+				setHiddenElements([bullet1, bullet2, bullet3, bulletLabel1, bulletLabel2, bulletLabel3, pressRemoteLabel], hidden: false)
 				
 				headlineLabel.text = " " + NSLocalizedString("Overscan", comment: "") + " "
 				headerLabel1.text = NSLocalizedString("overscanHeader1", comment: "")
@@ -115,7 +123,7 @@ class DetailViewController: UIViewController {
 				setBottomMostElement(bulletLabel3)
 			
 			case itemSharpness:
-				setHiddenElements([bullet1, bullet2, bullet3, bulletLabel1, bulletLabel2, bulletLabel3, actionButton], hidden: false)
+				setHiddenElements([bullet1, bullet2, bullet3, bulletLabel1, bulletLabel2, bulletLabel3, pressRemoteLabel], hidden: false)
 				
 				headlineLabel.text = " " + NSLocalizedString("Sharpness", comment: "") + " "
 				headerLabel1.text = NSLocalizedString("sharpnessHeader1", comment: "")
@@ -129,7 +137,7 @@ class DetailViewController: UIViewController {
 				setBottomMostElement(bulletLabel3)
 			
 			case itemCombination:
-				setHiddenElements([actionButton], hidden: false)
+				setHiddenElements([pressRemoteLabel], hidden: false)
 				setHiddenElements([bullet1, bullet2, bullet3, bulletLabel1, bulletLabel2, bulletLabel3], hidden: true)
 				
 				headlineLabel.text = " " + NSLocalizedString("Combination", comment: "") + " "
@@ -141,29 +149,29 @@ class DetailViewController: UIViewController {
 		}
 	}
 	
-	@IBAction func buttonTapped(sender: AnyObject) {
-		
-		guard let storyboard = storyboard else { return }
-		guard let testPatternViewController = storyboard.instantiateViewControllerWithIdentifier("TestPatternViewController") as? TestPatternViewController else { return }
 
-		if (currentItem <= testPatterns.count) {
-			testPatternViewController.imageFile = testPatterns[currentItem-1]
-			splitViewController?.presentViewController(testPatternViewController, animated: true, completion: nil)
-		}
-	}
-	
+    func showTestPattern()
+    {
+        guard let storyboard = storyboard else { return }
+        guard let testPatternViewController = storyboard.instantiateViewController(withIdentifier: "TestPatternViewController") as? TestPatternViewController else { return }
+        
+        if ((currentItem <= testPatterns.count) && (currentItem > 0)) {
+            testPatternViewController.imageFile = testPatterns[currentItem-1]
+            splitViewController?.present(testPatternViewController, animated: true, completion: nil)
+        }
+    }
 	
 	// MARKED: Private Functions
 	
 	
-	private func setHiddenElements(elements: [UIView], hidden: Bool) {
+	fileprivate func setHiddenElements(_ elements: [UIView], hidden: Bool) {
 		for element in elements {
-			element.hidden = hidden
+			element.isHidden = hidden
 		}
 	}
 
 	
-	private func setBottomMostElement(bottomElement: UIView) {
+	fileprivate func setBottomMostElement(_ bottomElement: UIView) {
 
 		// remove old backView-bottom-constraing
 		
@@ -175,8 +183,8 @@ class DetailViewController: UIViewController {
 		
 		// add new constraint
 		
-		let newConstraint = NSLayoutConstraint(item: bottomElement,	attribute: NSLayoutAttribute.Bottom, relatedBy: NSLayoutRelation.Equal, toItem: backView,
-			attribute: NSLayoutAttribute.Bottom, multiplier: 1.0, constant: -10)
+		let newConstraint = NSLayoutConstraint(item: bottomElement,	attribute: NSLayoutAttribute.bottom, relatedBy: NSLayoutRelation.equal, toItem: backView,
+			attribute: NSLayoutAttribute.bottom, multiplier: 1.0, constant: -10)
 		
 		newConstraint.identifier = backViewBottomConstraintName
 		

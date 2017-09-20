@@ -10,19 +10,12 @@
 		4F0B88B61BA1C7BA00831826 /* MainSplitViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F0B88B51BA1C7BA00831826 /* MainSplitViewController.swift */; };
 		4F0B88B81BA1D33E00831826 /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F0B88B71BA1D33E00831826 /* DetailViewController.swift */; };
 		4F0B88BA1BA1D53A00831826 /* MenuTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F0B88B91BA1D53A00831826 /* MenuTableViewController.swift */; };
-		4F0B88C11BA328CC00831826 /* Livingroom.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 4F0B88C01BA328CC00831826 /* Livingroom.jpg */; };
-		4F0B88C51BA331CE00831826 /* CalibrateTitle.png in Resources */ = {isa = PBXBuildFile; fileRef = 4F0B88C41BA331CE00831826 /* CalibrateTitle.png */; };
 		4FB64A3E1BA16E2800AA1EC7 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FB64A3D1BA16E2800AA1EC7 /* AppDelegate.swift */; };
 		4FB64A431BA16E2900AA1EC7 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4FB64A411BA16E2900AA1EC7 /* Main.storyboard */; };
 		4FB64A451BA16E2900AA1EC7 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4FB64A441BA16E2900AA1EC7 /* Assets.xcassets */; };
 		4FB64A501BA16E2900AA1EC7 /* calibrateTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FB64A4F1BA16E2900AA1EC7 /* calibrateTests.swift */; };
 		4FCF0D6B1BDE2BD900F7F78E /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 4FCF0D6D1BDE2BD900F7F78E /* Localizable.strings */; };
 		4FCF0D751BDE612200F7F78E /* TestPatternViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FCF0D741BDE612200F7F78E /* TestPatternViewController.swift */; };
-		4FCF0D7D1BDF840900F7F78E /* overscan.png in Resources */ = {isa = PBXBuildFile; fileRef = 4FCF0D7C1BDF840900F7F78E /* overscan.png */; };
-		4FCF0D851BDFBE9D00F7F78E /* contrast.png in Resources */ = {isa = PBXBuildFile; fileRef = 4FCF0D841BDFBE9D00F7F78E /* contrast.png */; };
-		4FCF0D871BDFCB5F00F7F78E /* sharpness.png in Resources */ = {isa = PBXBuildFile; fileRef = 4FCF0D861BDFCB5F00F7F78E /* sharpness.png */; };
-		4FCF0D901BE0000000F7F78E /* brightness.png in Resources */ = {isa = PBXBuildFile; fileRef = 4FCF0D8E1BE0000000F7F78E /* brightness.png */; };
-		4FCF0D911BE0000000F7F78E /* kombination.png in Resources */ = {isa = PBXBuildFile; fileRef = 4FCF0D8F1BE0000000F7F78E /* kombination.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -39,8 +32,6 @@
 		4F0B88B51BA1C7BA00831826 /* MainSplitViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainSplitViewController.swift; sourceTree = "<group>"; };
 		4F0B88B71BA1D33E00831826 /* DetailViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
 		4F0B88B91BA1D53A00831826 /* MenuTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MenuTableViewController.swift; sourceTree = "<group>"; };
-		4F0B88C01BA328CC00831826 /* Livingroom.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = Livingroom.jpg; sourceTree = "<group>"; };
-		4F0B88C41BA331CE00831826 /* CalibrateTitle.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = CalibrateTitle.png; sourceTree = "<group>"; };
 		4FB64A3A1BA16E2800AA1EC7 /* calibrate.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = calibrate.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		4FB64A3D1BA16E2800AA1EC7 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		4FB64A421BA16E2900AA1EC7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -52,11 +43,6 @@
 		4FCF0D6E1BDE2BDD00F7F78E /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
 		4FCF0D6F1BDE2C2C00F7F78E /* de */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = de; path = de.lproj/Localizable.strings; sourceTree = "<group>"; };
 		4FCF0D741BDE612200F7F78E /* TestPatternViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TestPatternViewController.swift; sourceTree = "<group>"; };
-		4FCF0D7C1BDF840900F7F78E /* overscan.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = overscan.png; sourceTree = "<group>"; };
-		4FCF0D841BDFBE9D00F7F78E /* contrast.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = contrast.png; sourceTree = "<group>"; };
-		4FCF0D861BDFCB5F00F7F78E /* sharpness.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = sharpness.png; sourceTree = "<group>"; };
-		4FCF0D8E1BE0000000F7F78E /* brightness.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = brightness.png; sourceTree = "<group>"; };
-		4FCF0D8F1BE0000000F7F78E /* kombination.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = kombination.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -77,15 +63,6 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		4F0B88BB1BA22BD600831826 /* images */ = {
-			isa = PBXGroup;
-			children = (
-				4F0B88C41BA331CE00831826 /* CalibrateTitle.png */,
-				4F0B88C01BA328CC00831826 /* Livingroom.jpg */,
-			);
-			name = images;
-			sourceTree = "<group>";
-		};
 		4FB64A311BA16E2800AA1EC7 = {
 			isa = PBXGroup;
 			children = (
@@ -108,12 +85,10 @@
 			isa = PBXGroup;
 			children = (
 				4FB64A441BA16E2900AA1EC7 /* Assets.xcassets */,
-				4F0B88BB1BA22BD600831826 /* images */,
 				4FB64A461BA16E2900AA1EC7 /* Info.plist */,
 				4FCF0D6D1BDE2BD900F7F78E /* Localizable.strings */,
 				4FB64A411BA16E2900AA1EC7 /* Main.storyboard */,
 				4FCF0D7F1BDF843400F7F78E /* souce */,
-				4FCF0D7E1BDF840F00F7F78E /* test patterns */,
 			);
 			path = calibrate;
 			sourceTree = "<group>";
@@ -125,18 +100,6 @@
 				4FB64A511BA16E2900AA1EC7 /* Info.plist */,
 			);
 			path = calibrateTests;
-			sourceTree = "<group>";
-		};
-		4FCF0D7E1BDF840F00F7F78E /* test patterns */ = {
-			isa = PBXGroup;
-			children = (
-				4FCF0D8E1BE0000000F7F78E /* brightness.png */,
-				4FCF0D841BDFBE9D00F7F78E /* contrast.png */,
-				4FCF0D8F1BE0000000F7F78E /* kombination.png */,
-				4FCF0D7C1BDF840900F7F78E /* overscan.png */,
-				4FCF0D861BDFCB5F00F7F78E /* sharpness.png */,
-			);
-			name = "test patterns";
 			sourceTree = "<group>";
 		};
 		4FCF0D7F1BDF843400F7F78E /* souce */ = {
@@ -195,15 +158,17 @@
 		4FB64A321BA16E2800AA1EC7 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastUpgradeCheck = 0710;
+				LastUpgradeCheck = 0900;
 				ORGANIZATIONNAME = "Oliver Eichhorn";
 				TargetAttributes = {
 					4FB64A391BA16E2800AA1EC7 = {
 						CreatedOnToolsVersion = 7.1;
 						DevelopmentTeam = FTX9FBCWZ9;
+						LastSwiftMigration = 0900;
 					};
 					4FB64A4A1BA16E2900AA1EC7 = {
 						CreatedOnToolsVersion = 7.1;
+						LastSwiftMigration = 0900;
 						TestTargetID = 4FB64A391BA16E2800AA1EC7;
 					};
 				};
@@ -234,15 +199,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				4FCF0D6B1BDE2BD900F7F78E /* Localizable.strings in Resources */,
-				4FCF0D911BE0000000F7F78E /* kombination.png in Resources */,
 				4FB64A451BA16E2900AA1EC7 /* Assets.xcassets in Resources */,
-				4FCF0D7D1BDF840900F7F78E /* overscan.png in Resources */,
-				4FCF0D901BE0000000F7F78E /* brightness.png in Resources */,
-				4FCF0D871BDFCB5F00F7F78E /* sharpness.png in Resources */,
 				4FB64A431BA16E2900AA1EC7 /* Main.storyboard in Resources */,
-				4FCF0D851BDFBE9D00F7F78E /* contrast.png in Resources */,
-				4F0B88C51BA331CE00831826 /* CalibrateTitle.png in Resources */,
-				4F0B88C11BA328CC00831826 /* Livingroom.jpg in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -311,17 +269,26 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
 				CLANG_CXX_LIBRARY = "libc++";
 				CLANG_ENABLE_MODULES = YES;
 				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
 				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
 				CLANG_WARN_CONSTANT_CONVERSION = YES;
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_EMPTY_BODY = YES;
 				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				COPY_PHASE_STRIP = NO;
@@ -347,7 +314,7 @@
 				SDKROOT = appletvos;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				TARGETED_DEVICE_FAMILY = 3;
-				TVOS_DEPLOYMENT_TARGET = 9.0;
+				TVOS_DEPLOYMENT_TARGET = 10.0;
 			};
 			name = Debug;
 		};
@@ -355,17 +322,26 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
 				CLANG_CXX_LIBRARY = "libc++";
 				CLANG_ENABLE_MODULES = YES;
 				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
 				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
 				CLANG_WARN_CONSTANT_CONVERSION = YES;
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_EMPTY_BODY = YES;
 				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				COPY_PHASE_STRIP = NO;
@@ -382,8 +358,9 @@
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = appletvos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
 				TARGETED_DEVICE_FAMILY = 3;
-				TVOS_DEPLOYMENT_TARGET = 9.0;
+				TVOS_DEPLOYMENT_TARGET = 10.0;
 				VALIDATE_PRODUCT = YES;
 			};
 			name = Release;
@@ -398,6 +375,8 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.icorn.calibrate;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_SWIFT3_OBJC_INFERENCE = On;
+				SWIFT_VERSION = 4.0;
 			};
 			name = Debug;
 		};
@@ -411,6 +390,8 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.icorn.calibrate;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_SWIFT3_OBJC_INFERENCE = On;
+				SWIFT_VERSION = 4.0;
 			};
 			name = Release;
 		};
@@ -422,6 +403,8 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.icorn.calibrateTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_SWIFT3_OBJC_INFERENCE = On;
+				SWIFT_VERSION = 4.0;
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/calibrate.app/calibrate";
 			};
 			name = Debug;
@@ -434,6 +417,8 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.icorn.calibrateTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_SWIFT3_OBJC_INFERENCE = On;
+				SWIFT_VERSION = 4.0;
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/calibrate.app/calibrate";
 			};
 			name = Release;

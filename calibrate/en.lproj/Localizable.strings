@@ -6,6 +6,7 @@
   Copyright © 2015 Oliver Eichhorn. All rights reserved.
 */
 
+"TitleImage"        = "TitleEN";
 
 // table view menu
 
@@ -19,7 +20,7 @@
 
 // detail view
 
-"ShowTestPattern"	= "Show Test Pattern";
+"PressRemoteButton" = "Press the touch surface on the remote to show test pattern";
 
 // introduction
 

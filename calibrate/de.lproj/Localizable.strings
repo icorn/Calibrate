@@ -6,6 +6,7 @@
   Copyright © 2015 Oliver Eichhorn. All rights reserved.
 */
 
+"TitleImage"        = "TitleDE";
 
 // table view menu
 
@@ -19,7 +20,7 @@
 
 // detail view
 
-"ShowTestPattern"	= "Zeige Testbild";
+"PressRemoteButton" = "Um das Testbild zu zeigen, drücke die Touch-Oberfläche auf der Fernbedienung";
 
 // introduction
 

@@ -17,15 +17,15 @@ class TestPatternViewController: UIViewController {
 	
     override func viewDidLoad() {
         super.viewDidLoad()
-		imageButton.setImage(UIImage(named: imageFile), forState: UIControlState.Normal)
+		imageButton.setImage(UIImage(named: imageFile), for: UIControlState())
     }
 
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
     }
 	
-	@IBAction func buttonPressed(sender: AnyObject) {
-		self.dismissViewControllerAnimated(true, completion: nil)
+	@IBAction func buttonPressed(_ sender: AnyObject) {
+		self.dismiss(animated: true, completion: nil)
 	}
 	
 }

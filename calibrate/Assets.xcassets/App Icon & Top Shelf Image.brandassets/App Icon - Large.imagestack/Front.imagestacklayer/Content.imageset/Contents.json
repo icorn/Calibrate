@@ -4,6 +4,11 @@
       "idiom" : "tv",
       "filename" : "vorneBig.png",
       "scale" : "1x"
+    },
+    {
+      "idiom" : "tv",
+      "filename" : "vorneBig@2x.png",
+      "scale" : "2x"
     }
   ],
   "info" : {

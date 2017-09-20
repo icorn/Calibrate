@@ -4,6 +4,11 @@
       "idiom" : "tv",
       "filename" : "vorn.png",
       "scale" : "1x"
+    },
+    {
+      "idiom" : "tv",
+      "filename" : "vorn@2x.png",
+      "scale" : "2x"
     }
   ],
   "info" : {

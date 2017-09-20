@@ -4,6 +4,11 @@
       "idiom" : "tv",
       "filename" : "hintenBig.jpg",
       "scale" : "1x"
+    },
+    {
+      "idiom" : "tv",
+      "filename" : "hintenBig@2x.png",
+      "scale" : "2x"
     }
   ],
   "info" : {

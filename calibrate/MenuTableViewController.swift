@@ -7,6 +7,30 @@
 //
 
 import UIKit
+// FIXME: comparison operators with optionals were removed from the Swift Standard Libary.
+// Consider refactoring the code to use the non-optional operators.
+fileprivate func < <T : Comparable>(lhs: T?, rhs: T?) -> Bool {
+  switch (lhs, rhs) {
+  case let (l?, r?):
+    return l < r
+  case (nil, _?):
+    return true
+  default:
+    return false
+  }
+}
+
+// FIXME: comparison operators with optionals were removed from the Swift Standard Libary.
+// Consider refactoring the code to use the non-optional operators.
+fileprivate func > <T : Comparable>(lhs: T?, rhs: T?) -> Bool {
+  switch (lhs, rhs) {
+  case let (l?, r?):
+    return l > r
+  default:
+    return rhs < lhs
+  }
+}
+
 
 
 class MenuTableViewController: UITableViewController {
@@ -21,12 +45,9 @@ class MenuTableViewController: UITableViewController {
 	@IBOutlet weak var tableCellLabel4: UILabel!
 	@IBOutlet weak var tableCellLabel5: UILabel!
 	
-	
     override func viewDidLoad() {
         super.viewDidLoad()
 
-		tableView.layoutMargins.left = 90
-		tableView.layoutMargins.right = 50
 		tableView.remembersLastFocusedIndexPath = true
 		
 		// get detail controller
@@ -37,8 +58,8 @@ class MenuTableViewController: UITableViewController {
 
 		// show nice logo
 		
-		let logoImageView = UIImageView(frame: CGRect(x: 0, y: 0, width: 300, height: 102))
-		let logoImage = UIImage(named: "CalibrateTitle.png")
+		let logoImageView = UIImageView(frame: CGRect(x: 0, y: 0, width: 300, height: 160))
+		let logoImage = UIImage(named: NSLocalizedString("TitleImage", comment: ""))
 		
 		if let logoImage = logoImage {
 			logoImageView.image = logoImage
@@ -62,7 +83,7 @@ class MenuTableViewController: UITableViewController {
     }
 
 	
-	override func tableView(tableView: UITableView, titleForHeaderInSection section: Int) -> String? {
+	override func tableView(_ tableView: UITableView, titleForHeaderInSection section: Int) -> String? {
 		if section == 1 {
 			return NSLocalizedString("Calibration", comment: "")
 		}
@@ -70,15 +91,19 @@ class MenuTableViewController: UITableViewController {
 		return ""
 	}
 	
-	override func tableView(tableView: UITableView, didUpdateFocusInContext context: UITableViewFocusUpdateContext, withAnimationCoordinator coordinator: UIFocusAnimationCoordinator) {
+	override func tableView(_ tableView: UITableView, didUpdateFocusIn context: UITableViewFocusUpdateContext, with coordinator: UIFocusAnimationCoordinator) {
 		
 		// Check that the next focus view is a child of the table view.
 		
-		guard 	let nextFocusedView = context.nextFocusedView where nextFocusedView.isDescendantOfView(tableView),
+		guard 	let nextFocusedView = context.nextFocusedView, nextFocusedView.isDescendant(of: tableView),
 				let nextFocusedIndexPath = context.nextFocusedIndexPath,
 				let	detailViewController = detailViewController else { return }
 		
 		detailViewController.setItem(nextFocusedIndexPath)
 	}
+    
+    override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        detailViewController?.showTestPattern()
+    }
 	
 }
