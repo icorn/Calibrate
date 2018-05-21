@@ -10,6 +10,7 @@
 		4F0B88B61BA1C7BA00831826 /* MainSplitViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F0B88B51BA1C7BA00831826 /* MainSplitViewController.swift */; };
 		4F0B88B81BA1D33E00831826 /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F0B88B71BA1D33E00831826 /* DetailViewController.swift */; };
 		4F0B88BA1BA1D53A00831826 /* MenuTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F0B88B91BA1D53A00831826 /* MenuTableViewController.swift */; };
+		4F23A0C520B3178800FB3759 /* PrivacyViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F23A0C420B3178800FB3759 /* PrivacyViewController.swift */; };
 		4FB64A3E1BA16E2800AA1EC7 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FB64A3D1BA16E2800AA1EC7 /* AppDelegate.swift */; };
 		4FB64A431BA16E2900AA1EC7 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4FB64A411BA16E2900AA1EC7 /* Main.storyboard */; };
 		4FB64A451BA16E2900AA1EC7 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4FB64A441BA16E2900AA1EC7 /* Assets.xcassets */; };
@@ -32,6 +33,7 @@
 		4F0B88B51BA1C7BA00831826 /* MainSplitViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainSplitViewController.swift; sourceTree = "<group>"; };
 		4F0B88B71BA1D33E00831826 /* DetailViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
 		4F0B88B91BA1D53A00831826 /* MenuTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MenuTableViewController.swift; sourceTree = "<group>"; };
+		4F23A0C420B3178800FB3759 /* PrivacyViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PrivacyViewController.swift; sourceTree = "<group>"; };
 		4FB64A3A1BA16E2800AA1EC7 /* calibrate.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = calibrate.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		4FB64A3D1BA16E2800AA1EC7 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		4FB64A421BA16E2900AA1EC7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -110,6 +112,7 @@
 				4F0B88B51BA1C7BA00831826 /* MainSplitViewController.swift */,
 				4F0B88B91BA1D53A00831826 /* MenuTableViewController.swift */,
 				4FCF0D741BDE612200F7F78E /* TestPatternViewController.swift */,
+				4F23A0C420B3178800FB3759 /* PrivacyViewController.swift */,
 			);
 			name = souce;
 			sourceTree = "<group>";
@@ -223,6 +226,7 @@
 				4F0B88B61BA1C7BA00831826 /* MainSplitViewController.swift in Sources */,
 				4F0B88B81BA1D33E00831826 /* DetailViewController.swift in Sources */,
 				4FCF0D751BDE612200F7F78E /* TestPatternViewController.swift in Sources */,
+				4F23A0C520B3178800FB3759 /* PrivacyViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

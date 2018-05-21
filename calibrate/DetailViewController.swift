@@ -10,12 +10,11 @@ import UIKit
 
 class DetailViewController: UIViewController {
 	
-	let itemIntroduction 	= 0
-	let itemBrightness 		= 1
-	let itemContrast 		= 2
-	let itemOverscan	 	= 3
-	let itemSharpness 		= 4
-	let itemCombination 	= 5
+	let itemBrightness 		= 0
+	let itemContrast 		= 1
+	let itemOverscan	 	= 2
+	let itemSharpness 		= 3
+	let itemCombination 	= 4
 	
 	let testPatterns = [
 		"brightness.png",
@@ -62,91 +61,113 @@ class DetailViewController: UIViewController {
         super.didReceiveMemoryWarning()
     }
     
-	func setItem(_ newIndexPath: IndexPath) {
-		currentItem = newIndexPath.section + newIndexPath.row
+	func setItem(_ newIndexPath: IndexPath)
+    {
+		if (newIndexPath.section == 0)
+        {
+            setHiddenElements([bullet1, bullet2, bulletLabel1, bulletLabel2], hidden: false)
+            setHiddenElements([bullet3, bulletLabel3, pressRemoteLabel], hidden: true)
+            
+            headlineLabel.text = " " + NSLocalizedString("Introduction", comment: "") + " "
+            headerLabel1.text = NSLocalizedString("introHeader1", comment: "")
+            bullet1.text = bullet
+            bullet2.text = bullet
+            bulletLabel1.text = NSLocalizedString("introBullet1", comment: "")
+            bulletLabel2.text = NSLocalizedString("introBullet2", comment: "")
+            pressRemoteLabel.text = NSLocalizedString("PressRemoteButton", comment: "")
 
-		switch currentItem {
-			case itemIntroduction:
-				setHiddenElements([bullet1, bullet2, bulletLabel1, bulletLabel2], hidden: false)
-				setHiddenElements([bullet3, bulletLabel3, pressRemoteLabel], hidden: true)
-				
-				headlineLabel.text = " " + NSLocalizedString("Introduction", comment: "") + " "
-				headerLabel1.text = NSLocalizedString("introHeader1", comment: "")
-				bullet1.text = bullet
-				bullet2.text = bullet
-				bulletLabel1.text = NSLocalizedString("introBullet1", comment: "")
-				bulletLabel2.text = NSLocalizedString("introBullet2", comment: "")
+            setBottomMostElement(bulletLabel2)
+        }
+        else if (newIndexPath.section == 1)
+        {
+            self.currentItem = newIndexPath.row
+            
+            switch newIndexPath.row {
+                case itemBrightness:
+                    setHiddenElements([bullet1, bullet2, bulletLabel1, bulletLabel2, pressRemoteLabel], hidden: false)
+                    setHiddenElements([bullet3, bulletLabel3], hidden: true)
+
+                    headlineLabel.text = " " + NSLocalizedString("Brightness", comment: "") + " "
+                    headerLabel1.text = NSLocalizedString("brightnessHeader1", comment: "")
+                    bullet1.text = bullet
+                    bullet2.text = bullet
+                    bullet3.text = bullet
+                    bulletLabel1.text = NSLocalizedString("brightnessBullet1", comment: "")
+                    bulletLabel2.text = NSLocalizedString("brightnessBullet2", comment: "")
+                    bulletLabel3.text = NSLocalizedString("brightnessBullet3", comment: "")
+                    pressRemoteLabel.text = NSLocalizedString("PressRemoteButton", comment: "")
+
+                    setBottomMostElement(bulletLabel2)
+
+                case itemContrast:
+                    setHiddenElements([bullet1, bullet2, bullet3, bulletLabel1, bulletLabel2, bulletLabel3, pressRemoteLabel], hidden: false)
+                    
+                    headlineLabel.text = " " + NSLocalizedString("Contrast", comment: "") + " "
+                    headerLabel1.text = NSLocalizedString("contrastHeader1", comment: "")
+                    bullet1.text = bullet
+                    bullet2.text = bullet
+                    bullet3.text = bullet
+                    bulletLabel1.text = NSLocalizedString("contrastBullet1", comment: "")
+                    bulletLabel2.text = NSLocalizedString("contrastBullet2", comment: "")
+                    bulletLabel3.text = NSLocalizedString("contrastBullet3", comment: "")
+                    pressRemoteLabel.text = NSLocalizedString("PressRemoteButton", comment: "")
+
+                    setBottomMostElement(bulletLabel3)
                 
-				setBottomMostElement(bulletLabel2)
-			
-			case itemBrightness:
-				setHiddenElements([bullet1, bullet2, bulletLabel1, bulletLabel2, pressRemoteLabel], hidden: false)
-				setHiddenElements([bullet3, bulletLabel3], hidden: true)
+                case itemOverscan:
+                    setHiddenElements([bullet1, bullet2, bullet3, bulletLabel1, bulletLabel2, bulletLabel3, pressRemoteLabel], hidden: false)
+                    
+                    headlineLabel.text = " " + NSLocalizedString("Overscan", comment: "") + " "
+                    headerLabel1.text = NSLocalizedString("overscanHeader1", comment: "")
+                    bullet1.text = bullet
+                    bullet2.text = bullet
+                    bullet3.text = bullet
+                    bulletLabel1.text = NSLocalizedString("overscanBullet1", comment: "")
+                    bulletLabel2.text = NSLocalizedString("overscanBullet2", comment: "")
+                    bulletLabel3.text = NSLocalizedString("overscanBullet3", comment: "")
+                    pressRemoteLabel.text = NSLocalizedString("PressRemoteButton", comment: "")
 
-				headlineLabel.text = " " + NSLocalizedString("Brightness", comment: "") + " "
-				headerLabel1.text = NSLocalizedString("brightnessHeader1", comment: "")
-				bullet1.text = bullet
-				bullet2.text = bullet
-				bullet3.text = bullet
-				bulletLabel1.text = NSLocalizedString("brightnessBullet1", comment: "")
-				bulletLabel2.text = NSLocalizedString("brightnessBullet2", comment: "")
-				bulletLabel3.text = NSLocalizedString("brightnessBullet3", comment: "")
+                    setBottomMostElement(bulletLabel3)
+                
+                case itemSharpness:
+                    setHiddenElements([bullet1, bullet2, bullet3, bulletLabel1, bulletLabel2, bulletLabel3, pressRemoteLabel], hidden: false)
+                    
+                    headlineLabel.text = " " + NSLocalizedString("Sharpness", comment: "") + " "
+                    headerLabel1.text = NSLocalizedString("sharpnessHeader1", comment: "")
+                    bullet1.text = bullet
+                    bullet2.text = bullet
+                    bullet3.text = bullet
+                    bulletLabel1.text = NSLocalizedString("sharpnessBullet1", comment: "")
+                    bulletLabel2.text = NSLocalizedString("sharpnessBullet2", comment: "")
+                    bulletLabel3.text = NSLocalizedString("sharpnessBullet3", comment: "")
+                    pressRemoteLabel.text = NSLocalizedString("PressRemoteButton", comment: "")
 
-				setBottomMostElement(bulletLabel2)
+                    setBottomMostElement(bulletLabel3)
+                
+                case itemCombination:
+                    setHiddenElements([pressRemoteLabel], hidden: false)
+                    setHiddenElements([bullet1, bullet2, bullet3, bulletLabel1, bulletLabel2, bulletLabel3], hidden: true)
+                    
+                    headlineLabel.text = " " + NSLocalizedString("Combination", comment: "") + " "
+                    headerLabel1.text = NSLocalizedString("combinationHeader1", comment: "")
+                    pressRemoteLabel.text = NSLocalizedString("PressRemoteButton", comment: "")
 
-			case itemContrast:
-				setHiddenElements([bullet1, bullet2, bullet3, bulletLabel1, bulletLabel2, bulletLabel3, pressRemoteLabel], hidden: false)
-				
-				headlineLabel.text = " " + NSLocalizedString("Contrast", comment: "") + " "
-				headerLabel1.text = NSLocalizedString("contrastHeader1", comment: "")
-				bullet1.text = bullet
-				bullet2.text = bullet
-				bullet3.text = bullet
-				bulletLabel1.text = NSLocalizedString("contrastBullet1", comment: "")
-				bulletLabel2.text = NSLocalizedString("contrastBullet2", comment: "")
-				bulletLabel3.text = NSLocalizedString("contrastBullet3", comment: "")
-				
-				setBottomMostElement(bulletLabel3)
-			
-			case itemOverscan:
-				setHiddenElements([bullet1, bullet2, bullet3, bulletLabel1, bulletLabel2, bulletLabel3, pressRemoteLabel], hidden: false)
-				
-				headlineLabel.text = " " + NSLocalizedString("Overscan", comment: "") + " "
-				headerLabel1.text = NSLocalizedString("overscanHeader1", comment: "")
-				bullet1.text = bullet
-				bullet2.text = bullet
-				bullet3.text = bullet
-				bulletLabel1.text = NSLocalizedString("overscanBullet1", comment: "")
-				bulletLabel2.text = NSLocalizedString("overscanBullet2", comment: "")
-				bulletLabel3.text = NSLocalizedString("overscanBullet3", comment: "")
-				
-				setBottomMostElement(bulletLabel3)
-			
-			case itemSharpness:
-				setHiddenElements([bullet1, bullet2, bullet3, bulletLabel1, bulletLabel2, bulletLabel3, pressRemoteLabel], hidden: false)
-				
-				headlineLabel.text = " " + NSLocalizedString("Sharpness", comment: "") + " "
-				headerLabel1.text = NSLocalizedString("sharpnessHeader1", comment: "")
-				bullet1.text = bullet
-				bullet2.text = bullet
-				bullet3.text = bullet
-				bulletLabel1.text = NSLocalizedString("sharpnessBullet1", comment: "")
-				bulletLabel2.text = NSLocalizedString("sharpnessBullet2", comment: "")
-				bulletLabel3.text = NSLocalizedString("sharpnessBullet3", comment: "")
-				
-				setBottomMostElement(bulletLabel3)
-			
-			case itemCombination:
-				setHiddenElements([pressRemoteLabel], hidden: false)
-				setHiddenElements([bullet1, bullet2, bullet3, bulletLabel1, bulletLabel2, bulletLabel3], hidden: true)
-				
-				headlineLabel.text = " " + NSLocalizedString("Combination", comment: "") + " "
-				headerLabel1.text = NSLocalizedString("combinationHeader1", comment: "")
-				
-				setBottomMostElement(headerLabel1)
-			
-			default: ()
-		}
+                    setBottomMostElement(headerLabel1)
+                
+                default: ()
+            }
+        }
+        if (newIndexPath.section == 2)
+        {
+            setHiddenElements([pressRemoteLabel], hidden: false)
+            setHiddenElements([bullet1, bullet2, bullet3, bulletLabel1, bulletLabel2, bulletLabel3], hidden: true)
+            
+            headlineLabel.text = " " + NSLocalizedString("Imprint", comment: "") + " "
+            headerLabel1.text = NSLocalizedString("ImprintText", comment: "")
+            pressRemoteLabel.text = NSLocalizedString("PressRemoteButtonPrivacy", comment: "")
+            
+            setBottomMostElement(headerLabel1)
+        }
 	}
 	
 
@@ -155,12 +176,19 @@ class DetailViewController: UIViewController {
         guard let storyboard = storyboard else { return }
         guard let testPatternViewController = storyboard.instantiateViewController(withIdentifier: "TestPatternViewController") as? TestPatternViewController else { return }
         
-        if ((currentItem <= testPatterns.count) && (currentItem > 0)) {
-            testPatternViewController.imageFile = testPatterns[currentItem-1]
+        if ((currentItem < testPatterns.count) && (currentItem >= 0)) {
+            testPatternViewController.imageFile = testPatterns[currentItem]
             splitViewController?.present(testPatternViewController, animated: true, completion: nil)
         }
     }
 	
+    func showPrivacyPolicy()
+    {
+        guard let storyboard = storyboard else { return }
+        guard let acceptPrivacyViewController = storyboard.instantiateViewController(withIdentifier: "PrivacyViewController") as? PrivacyViewController else { return }
+        splitViewController?.present(acceptPrivacyViewController, animated: true, completion: nil)
+    }
+    
 	// MARKED: Private Functions
 	
 	

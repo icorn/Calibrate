@@ -44,7 +44,8 @@ class MenuTableViewController: UITableViewController {
 	@IBOutlet weak var tableCellLabel3: UILabel!
 	@IBOutlet weak var tableCellLabel4: UILabel!
 	@IBOutlet weak var tableCellLabel5: UILabel!
-	
+    @IBOutlet weak var tableCellLabelInprint: UILabel!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
@@ -76,6 +77,8 @@ class MenuTableViewController: UITableViewController {
 		tableCellLabel3.text = "3. " + NSLocalizedString("Overscan", comment: "")
 		tableCellLabel4.text = "4. " + NSLocalizedString("Sharpness", comment: "")
 		tableCellLabel5.text = "5. " + NSLocalizedString("Combination", comment: "")
+        
+        tableCellLabelInprint.text = NSLocalizedString("ImprintPrivacy", comment: "")
     }
 
     override func didReceiveMemoryWarning() {
@@ -84,15 +87,20 @@ class MenuTableViewController: UITableViewController {
 
 	
 	override func tableView(_ tableView: UITableView, titleForHeaderInSection section: Int) -> String? {
-		if section == 1 {
+		if section == 1
+        {
 			return NSLocalizedString("Calibration", comment: "")
 		}
-		
+        else if section == 2
+        {
+            return NSLocalizedString("Misc", comment: "")
+        }
+
 		return ""
 	}
 	
-	override func tableView(_ tableView: UITableView, didUpdateFocusIn context: UITableViewFocusUpdateContext, with coordinator: UIFocusAnimationCoordinator) {
-		
+	override func tableView(_ tableView: UITableView, didUpdateFocusIn context: UITableViewFocusUpdateContext, with coordinator: UIFocusAnimationCoordinator)
+    {
 		// Check that the next focus view is a child of the table view.
 		
 		guard 	let nextFocusedView = context.nextFocusedView, nextFocusedView.isDescendant(of: tableView),
@@ -102,8 +110,16 @@ class MenuTableViewController: UITableViewController {
 		detailViewController.setItem(nextFocusedIndexPath)
 	}
     
-    override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        detailViewController?.showTestPattern()
+    override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath)
+    {
+        if (indexPath.section == 1)
+        {
+            detailViewController?.showTestPattern()
+        }
+        else if (indexPath.section == 2)
+        {
+            detailViewController?.showPrivacyPolicy()
+        }
     }
 	
 }
