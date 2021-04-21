@@ -155,7 +155,7 @@
         <scene sceneID="QKI-Bw-Tfo">
             <objects>
                 <tableViewController title="Calibrate" automaticallyAdjustsScrollViewInsets="NO" clearsSelectionOnViewWillAppear="NO" id="3Ot-ZH-bFS" customClass="MenuTableViewController" customModule="calibrate" customModuleProvider="target" sceneMemberID="viewController">
-                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" bounces="NO" bouncesZoom="NO" dataMode="static" style="grouped" separatorStyle="default" rowHeight="66" sectionHeaderHeight="40" sectionFooterHeight="40" id="rTw-Vi-4Zz">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" bounces="NO" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" bouncesZoom="NO" dataMode="static" style="grouped" separatorStyle="default" rowHeight="66" sectionHeaderHeight="40" sectionFooterHeight="40" id="rTw-Vi-4Zz">
                         <rect key="frame" x="0.0" y="0.0" width="814" height="1080"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" red="0.93725490199999995" green="0.93725490199999995" blue="0.95686274510000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -400,7 +400,7 @@
         <!--Main Split View Controller-->
         <scene sceneID="3NY-bZ-sLs">
             <objects>
-                <splitViewController allowDoubleColumnStyle="YES" id="uTp-Oz-IIX" customClass="MainSplitViewController" customModule="calibrate" customModuleProvider="target" sceneMemberID="viewController">
+                <splitViewController id="uTp-Oz-IIX" customClass="MainSplitViewController" customModule="calibrate" customModuleProvider="target" sceneMemberID="viewController">
                     <connections>
                         <segue destination="cHG-dw-E3e" kind="relationship" relationship="masterViewController" id="Dc0-ZS-cLk"/>
                         <segue destination="w21-Ha-3fW" kind="relationship" relationship="detailViewController" id="Pav-t9-FuU"/>
