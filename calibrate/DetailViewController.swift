@@ -211,8 +211,8 @@ class DetailViewController: UIViewController {
 		
 		// add new constraint
 		
-		let newConstraint = NSLayoutConstraint(item: bottomElement,	attribute: NSLayoutAttribute.bottom, relatedBy: NSLayoutRelation.equal, toItem: backView,
-			attribute: NSLayoutAttribute.bottom, multiplier: 1.0, constant: -10)
+		let newConstraint = NSLayoutConstraint(item: bottomElement,	attribute: NSLayoutConstraint.Attribute.bottom, relatedBy: NSLayoutConstraint.Relation.equal, toItem: backView,
+			attribute: NSLayoutConstraint.Attribute.bottom, multiplier: 1.0, constant: -10)
 		
 		newConstraint.identifier = backViewBottomConstraintName
 		

@@ -17,7 +17,7 @@ class TestPatternViewController: UIViewController {
 	
     override func viewDidLoad() {
         super.viewDidLoad()
-		imageButton.setImage(UIImage(named: imageFile), for: UIControlState())
+		imageButton.setImage(UIImage(named: imageFile), for: UIControl.State())
     }
 
     override func didReceiveMemoryWarning() {

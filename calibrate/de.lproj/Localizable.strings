@@ -26,8 +26,8 @@
 
 // detail view
 
-"PressRemoteButton" = "Um das Testbild zu zeigen, drücke die Touch-Oberfläche auf der Fernbedienung";
-"PressRemoteButtonPrivacy" = "Um die Datenschutz-Erklärung zu sehen, drücke die Touch-Oberfläche auf der Fernbedienung";
+"PressRemoteButton" = "   Um das Testbild zu zeigen, drücke die Touch-Oberfläche auf der Fernbedienung   ";
+"PressRemoteButtonPrivacy" = "   Um die Datenschutz-Erklärung zu sehen, drücke die Touch-Oberfläche auf der Fernbedienung   ";
 
 // introduction
 

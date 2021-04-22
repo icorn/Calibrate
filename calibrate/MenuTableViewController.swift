@@ -131,4 +131,11 @@ class MenuTableViewController: UITableViewController {
         }
     }
 	
+    override func didUpdateFocus(in context: UIFocusUpdateContext, with coordinator: UIFocusAnimationCoordinator)
+    {
+        if let prevFocus = context.previouslyFocusedView as? UITableViewCell
+        {
+            prevFocus.backgroundColor = UIColor.clear
+        }
+    }
 }

@@ -25,7 +25,7 @@ class PrivacyViewController: UIViewController
         privacyTextView.isSelectable = true
         privacyTextView.isScrollEnabled = true
         privacyTextView.isUserInteractionEnabled = true
-        privacyTextView.panGestureRecognizer.allowedTouchTypes = [NSNumber(value: UITouchType.indirect.rawValue)]
+        privacyTextView.panGestureRecognizer.allowedTouchTypes = [NSNumber(value: UITouch.TouchType.indirect.rawValue)]
         privacyTextView.text = NSLocalizedString("PrivacyStatement", comment: "")
         
         closeButton.setTitle(NSLocalizedString("Close", comment: ""), for: .normal)

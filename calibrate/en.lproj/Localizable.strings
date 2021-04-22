@@ -26,8 +26,8 @@
 
 // detail view
 
-"PressRemoteButton" = "Press the touch surface on the remote to show test pattern";
-"PressRemoteButtonPrivacy" = "Press the touch surface on the remote to show the privacy policy";
+"PressRemoteButton" = "   Press the touch surface on the remote to show test pattern   ";
+"PressRemoteButtonPrivacy" = "   Press the touch surface on the remote to show the privacy policy   ";
 
 // introduction
 
